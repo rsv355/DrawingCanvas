@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <co.martinbaciga.drawingtest.ui.activity.AnimatedPathView
+        android:id="@+id/animated_path"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/etAnswer"
+        android:layout_weight="1"
+        app:strokeColor="@android:color/holo_red_light"
+        app:strokeWidth="10"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/etAnswer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Enter answer here"/>
+
+</RelativeLayout>
